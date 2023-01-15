@@ -29,6 +29,7 @@ body {
     /*short-hand: color img repeat position/size(cover)*/
     background: var(--bg-url) no-repeat top center/cover;
     font-size: 1.6rem;
+    height: 100vh;
 
 }
 
@@ -152,4 +153,12 @@ footer {
     font-size: 1.4rem;
 }
 
+@media (min-width: 768px) {
+    :root {
+        --bg-url: url(./assets/desktop-bg.jpg);
+    }
 
+    .light {
+        --bg-url: url(./assets/desktopbg-light.jpg);
+    }
+}
